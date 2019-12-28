@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang = "ja">
+
+<head>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{site_title}</title>
+<link rel="stylesheet" href="{site_css}" type="text/css" />
+<link type="text/css" href="{gmo_header_css}" rel="stylesheet" media="screen,print">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{site_rss}" />
+<link rel="alternate" type="application/atom+xml" href="{site_atom}" />
+<link rel="alternate" media="handheld" type="application/xhtml+xml" href="{mobile_url}" />
+<script src="./template/analogue/menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="./template/js/cookie.js"></script>
+<script type="text/javascript" src="./template/more/js/scroll.js" /></script>
+
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://js.jugem.jp/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://yuzuyuru.x.fc2.com/jquery.label_better.js"></script>
+<script type="text/javascript"
+src="http://yuzuyuru.x.fc2.com/date.js"></script>
+
+<script type="text/javascript"  charset="utf-8"> 
+var $j = jQuery.noConflict();
+ $(function() {
+	var topBtn = $('#back-top');	
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+    topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 1000);
+		return false;
+    });
+if (navigator.platform == "iPad" || navigator.platform == "iPhone") return;
+$j("img").lazyload({
+placeholder : "http://static.tumblr.com/twte3d7/RSvlio0k5/grey.gif",
+effect: "fadeIn",
+});
+});
+
+
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="./template/30days_1/js/DD_belatedPNG.js"></script>
+    <script>
+    DD_belatedPNG.fix('img, .entry_area, .entry_area_b, .entry_area_t, .poweredby');
+    </script>
+<![endif]-->
+
+</head>
+
+<body onload="javascript:initval();">
+
+<div class = "wrapper2">
+
+<!-- BEGIN title -->
+<div class="header">
+<div class="title-group animate">
+<div class="site_title"><a href="http://sidorodoro.jugem.jp/"><img src="http://img-cdn.jg.jugem.jp/666/1334632/20140725_891669.png" alt="" width="235" height="121" class="pict" /></a>
+</div><!-- div class="site_title" -->
+
+<div class="description">{blog_description}</div>
+</div><!-- div class="title-group animate" -->
+</div><!-- div class="header" -->
+<!-- END title -->
+
+<!-- BEGIN entry -->
+<div class="entry">
+<div class="entryHeader">
+<div class="entry_title">{entry_title_link}</div>
+<div class="entry_category">{category_name} , {entry_year}.{entry_month}.{entry_day}</div>
+</div>
+
+<div class="entry_body">
+{entry_description}</div>
+    <!-- BEGIN entry_sequel_link -->
+        <div class="post-more-link">
+            <a href="./?eid={entry_sequel_id}#sequel" class="more-link">続きを読む ＞＞</a>
+       </div>
+    <!-- END entry_sequel_link -->
+    <!-- BEGIN entry_sequel_items -->
+        <div class="entry_more">
+            {entry_sequel_text}
+        </div>
+<div class ="entry-footer">
+</div></div>
+<!-- END entry -->
+
+<!-- BEGIN profile_area -->
+<div class="entry">
+
+<div class="profile_body">{profile_description}</div>
+<div class ="entry-footer">
+</div>
+</div>
+<!-- END profile_area -->
+
+
+<!-- BEGIN sequel -->
+<div class="line">
+<div class="page">
+<div id="page_left"><a href="{next_permalink}">←NEWER POSTS</a></div>
+<div id="page_center">　</div>
+<div id="page_right"><a href="{prev_permalink}">OLDER POSTS→</a></div>
+</div>
+</div>
+<!-- END sequel -->
+
+<!-- BEGIN pager -->
+<div class="line">
+<div id="pager">
+{full_pager_link}
+</div></div>
+<!-- END pager -->
+
+<!-- Backtop -->
+
+<p id="back-top">
+	<a href="#top"><span></span></a>
+</p>
+
+<!-- footer -->
+
+<table id="footer" border="0" cellpadding="0" cellspacing="0">
+<tr valign="bottom">
+<td width="100%" nowrap>
+
+
+    <div class="wrapper flexGRID">
+    <div class="row">
+        <div class="col_2">
+   
+   <!-- BEGIN user -->
+<div class="footer_contents">
+<div class="links">
+<div class="linktitle">
+PROFILE
+</div> 
+<div class="linktext">
+<a href="http://sidorodoro.jugem.jp/?pid=1"><img src="http://img-cdn.jg.jugem.jp/666/1334632/20140725_892040.jpg" class="rounded-img" /></a> 
+
+<br /> 
+{user_list}
+</div>
+</div>
+
+</div>
+<!-- END user -->
+
+<!-- BEGIN category -->
+<div id="copyright_bnr" clas="footer_contents">
+<div class="links">
+<div class="linktitle">CATEGORY</div>
+<div class="linktext">
+    {category_list}
+</div>
+</div>
+</div>
+<!-- END category -->
+
+   
+        </div>
+        <div class="col_2 center">
+
+
+<!-- BEGIN jugem_ad -->
+<div class="footer_contents">
+<div class="links">
+<div class="linktitle">SPONSORED LINKS</div>
+<div class="linktext">
+{ad}
+</div>
+</div>
+</div>
+<!-- END jugem_ad -->
+
+<!-- BEGIN QR_code-->
+<div class="footer_contents">
+<div class="links">
+<div class="linktitle">MOBILE</div>
+<div class="linktext">
+{site_qrcode}
+</div>
+</div>
+</div>
+<!-- ENDQR_code -->
+      </div>
+
+        <div class="col_2 last">
+
+<!-- search -->
+<div class="footer_contents">
+<div class="links">
+<div class="linktitle">SEARCH</div>
+<div class="linktext">
+<form>
+<span><input id="search" name="search" class="search rounded" placeholder="Search..." /></span>
+</form>
+</div>
+</div>
+</div>
+<!-- /search/ -->
+
+<!-- other -->
+<div class="footer_contents">
+<div class="links">
+<div class="linktitle">
+OTHERS
+</div>
+<div class="linktext">
+<ul>
+<li><a href="./admin" class="foo">Log in</a></li>
+<li><a href="./?mode=rss" class="foo">RSS1.0</a></li>
+<li><a href="./?mode=atom" class="foo">Atom0.3</a></li>
+<ul>
+</div>
+
+</div>
+</div>
+<!-- /other -->
+
+<!-- powered -->
+<div id="copyright_bnr" clas="footer_contents">
+<div class="links">
+<div class="linktitle">POWERED</div>
+<div class="linktext">
+{powered}
+</div>
+</div>
+</div>
+<!-- /powered -->
+
+
+
+        </div>
+    </div>
+</div>
+
+
+</table>
+<!-- /footer/ -->
+
+</div>
+</body>
+</html>
