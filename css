@@ -9,7 +9,7 @@ html{
        background-repeat: repeat;
        background-attachment: fixed; 
         -webkit-font-smoothing: antialiased;
-        cursor: url("http://img-cdn.jg.jugem.jp/666/1334632/20191227_2053133.png"), url("http://yuzuyuru.x.fc2.com/ya1.cur"), default;
+        cursor: url("http://yuzuyuru.x.fc2.com/ya1.cur"), default;
 }
 
 body {
@@ -83,7 +83,7 @@ li {
 	}
 
 a{
-cursor: url("http://img-cdn.jg.jugem.jp/666/1334632/20191227_2053134.png"), url("http://yuzuyuru.x.fc2.com/yubi4.cur"), pointer;
+cursor: url("http://yuzuyuru.x.fc2.com/yubi4.cur"), pointer;
 }
 
 a:link {color:#333333; 
@@ -387,13 +387,6 @@ blockquote {
 .pict2{
     max-width: 100%;
     height: auto;
-}
-
-.pict3{
-}
-
-.pict4{
-display: block;
 }
 
 .page{
@@ -948,13 +941,6 @@ box-shadow: 0px 0px 0px 12px rgba(50, 166, 182,0.5);
 	 /*transition: 1s;*/
 }
 
-/*
-#back-top a:hover span {
-		background: url(http://img-cdn.jg.jugem.jp/666/1334632/20140521_814509.png) no-repeat center center;
-}
-*/
-
-
 
 /*@keyアニメーション---------------------------------------------*/     
 @-webkit-keyframes slide-fade-in {
@@ -1008,9 +994,5 @@ box-shadow: 0px 0px 0px 12px rgba(50, 166, 182,0.5);
           loat: none;
           margin: 0;
           width: auto;
-    }
-
-iframe {
-        width: 100% !important;
     }
 }
