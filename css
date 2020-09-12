@@ -76,11 +76,10 @@ ul {
         line-height: 120%;
 	}
 	
- ol{ list-style:decimal }
-
-li {
-	margin: 0 0 .5em 0;
-	}
+ol{ list-style:decimal 
+      margin: 10px;
+       padding: 10px 30px 10px 40px;
+}
 
 a{
 cursor: url("http://yuzuyuru.x.fc2.com/yubi4.cur"), pointer;
@@ -98,6 +97,7 @@ a:hover {color:#333333;
 text-decoration: none;
     }
 
+
 img {
        border:none;
        margin: 5px 0;
@@ -107,7 +107,7 @@ form {
 	margin: 0px;
 	padding: 0px;
 	font-size: 12px;
-	font-family: "Helvetica Neue", "Noto Sans JP", "Helvetica", "Arial", "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", sans-serif;
 	}
 
 input,textarea {
@@ -558,6 +558,10 @@ text-decoration:none;
     filter: alpha(opacity=60); 
 }
 
+.profile_body li{
+font-size: 16px;
+}
+
 .line{
     margin: 0px 100px;
     border-bottom: 2px solid #e5e4e0;
@@ -618,7 +622,7 @@ br {letter-spacing: normal}
 #footer {
 	width:580px;
         margin: 0px 0;
-	font-size:10px;
+	font-size:12px;
 
         padding:20px 0;
         text-align:left;
@@ -716,7 +720,7 @@ padding: 0px 0px 0px 10px;
 
 
 .linktext {
-font-size: 10px;
+font-size: 12px;
 line-height: 150%;
 margin: 1px 10px 5px 0px;
 padding: 10px;
